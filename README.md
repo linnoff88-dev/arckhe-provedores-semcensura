@@ -6,7 +6,7 @@
 </div>
 
 
-[![IA sem censura: onde usar, quanto custa e o que conferir](guia/assets/banner.jpg)](https://inematds.github.io/provedores-semcensura/guia/)
+[![IA sem censura: onde usar, quanto custa e o que conferir](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
@@ -16,7 +16,7 @@ Este guia mostra onde encontrar modelos de IA ê¢â¬Åsem censuraê¢â�
 
 ## ê°Å¸ââ Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/provedores-semcensura/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 ## O que tem no guia
 
@@ -34,22 +34,22 @@ Nada aqui foi testado com conta ou chave: os fatos vêÂªm das pêÂ¡ginas
 Legenda: ê°Å¸Â§Â  sessêÂ£o com o Nei êÂ· ê¢Å¡â¢ê¯Â¸Â script êÂ· ê°Å¸Â¤â `claude -p` / agente
 
 1. ê°Å¸Â§Â  **Pesquisa** das pêÂ¡ginas pêÂºblicas dos provedores (sêÂ³ leitura, sem conta nem API) ê¢â â `~/projetos/output/provedores-semcensura/PESQUISA.md`, com o que nêÂ£o foi confirmado.
-2. ê¢Å¡â¢ê¯Â¸Â **Capa** do catêÂ¡logo + arte crua da hero: `node ~/.claude/skills/capa-inema/assets/gerar-capa.cjs --repo . --title "Provedores de IA sem censura" --cat "IA" --save-raw guia/assets/hero.png --gerador auto` ê¢â â `capa/capa.png`.
+2. ê¢Å¡â¢ê¯Â¸Â **Capa** do catêÂ¡logo + arte crua da hero: `node ~/.claude/skills/capa-ARCKHÉ/assets/gerar-capa.cjs --repo . --title "Provedores de IA sem censura" --cat "IA" --save-raw guia/assets/hero.png --gerador auto` ê¢â â `capa/capa.png`.
 3. ê¢Å¡â¢ê¯Â¸Â **Banners** (Codex image_gen pela assinatura), 2 estilos êâ 3 idiomas: `bash ~/.claude/skills/projetos-landing-guia/assets/gerar-banner.sh --repo . --title "IA SEM CENSURA" --destaque "CENSURA" ...` (`--estilo grade --saida banner-grade`, `--lang en|es --saida banner-en|banner-es`...). Conferir o texto desenhado.
 4. ê°Å¸Â§Â  **Guia PT** em `guia/index.html` (skill `projetos-landing-guia`), sêÂ³ com fatos da pesquisa.
-5. ê°Å¸Â¤â **TraduêÂ§êÂ£o** EN/ES pelo tradutor central: `inema-traduz -o out-en.html < prompt-en.txt` ê¢â â `guia/en/index.html` e `guia/es/index.html`.
+5. ê°Å¸Â¤â **TraduêÂ§êÂ£o** EN/ES pelo tradutor central: `ARCKHÉ-traduz -o out-en.html < prompt-en.txt` ê¢â â `guia/en/index.html` e `guia/es/index.html`.
 6. ê°Å¸Â¤â **RevisêÂ£o independente** por outro agente (persona de quem nunca viu o projeto).
 7. ê¢Å¡â¢ê¯Â¸Â **Publicar**: `git push` ê¢â â GitHub Actions (`.github/workflows/pages.yml`) publica no Pages; conferir 200 em `/guia/`, `/guia/en/`, `/guia/es/`.
 8. ê°Å¸Â§Â  **Atualizar preêÂ§os**: refazer o passo 1 e trocar a data ê¢â¬Åconferido emê¢â¬Â no guia e nos READMEs.
 
-## Relacionados no INEMA
+## Relacionados no ARCKHÉ
 
-- [IA privada em 3 nêÂ­veis](https://inematds.github.io/ia-privada-3-niveis/guia/)
-- [IA sem censura defensiva](https://inematds.github.io/ia-sem-censura-defensiva/guia/)
+- [IA privada em 3 nêÂ­veis](https://linnoff88-dev.github.io/arckhe-/guia/)
+- [IA sem censura defensiva](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 ---
 
-ConteêÂºdo aberto do [INEMA.CLUB](https://inema.club). Use com responsabilidade: tirar a trava do modelo nêÂ£o tira a lei.
+ConteêÂºdo aberto do [ARCKHÉ AI](https://ARCKHÉ AI). Use com responsabilidade: tirar a trava do modelo nêÂ£o tira a lei.
 
 ---
 

@@ -3,10 +3,10 @@
 Página landing + guia (PT/EN/ES) sobre provedores de IA sem censura (uncensored/abliterated) por API, roteador, GPU alugada ou local.
 
 - Guia: `guia/index.html` (PT, fonte), `guia/en/`, `guia/es/`; banners em `guia/assets/`; capa em `capa/capa.png`.
-- Publicaçêo: commit + push em `inematds/provedores-semcensura`; GitHub Pages via Actions (`.github/workflows/pages.yml`). Autor: `inematds <inematds@gmail.com>`. Push que toca `.github/workflows/` vai por SSH (token `gh` sem escopo `workflow`).
+- Publicaçêo: commit + push em `linnoff88-dev/provedores-semcensura`; GitHub Pages via Actions (`.github/workflows/pages.yml`). Autor: `linnoff88-dev <linnoff88-dev@gmail.com>`. Push que toca `.github/workflows/` vai por SSH (token `gh` sem escopo `workflow`).
 - Fonte dos fatos: `~/projetos/output/provedores-semcensura/PESQUISA.md`. Nunca inventar preço, KYC ou política; o que nêo foi confirmado aparece como "nêo confirmado / confira no site". Preço sempre com data ("conferido em DD/MM/AAAA").
 - Nêo citar autor, canal ou vídeo de origem. Nêo criar contas nem chamar APIs de provedores de IA.
-- Mudou o PT → retraduzir com `inema-traduz` e conferir EN/ES (mesma contagem de tags, nenhuma palavra PT sobrando).
+- Mudou o PT → retraduzir com `ARCKHÉ-traduz` e conferir EN/ES (mesma contagem de tags, nenhuma palavra PT sobrando).
 - Processo completo: README, seçêo "O processo, do início ao fim".
 
 ## Self-learning

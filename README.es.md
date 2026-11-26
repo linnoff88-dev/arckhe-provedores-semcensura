@@ -1,6 +1,6 @@
 # provedores-semcensura
 
-[![IA sin censura: dónde usarla, cuánto cuesta y qué revisar](guia/assets/banner-es.jpg)](https://inematds.github.io/provedores-semcensura/guia/es/)
+[![IA sin censura: dónde usarla, cuánto cuesta y qué revisar](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,7 +10,7 @@ Esta guía muestra dónde encontrar modelos de IA “sin censura”, es decir, v
 
 ## 📖 Guía de uso
 
-Guía completa (landing + paso a paso): **https://inematds.github.io/provedores-semcensura/guia/es/**
+Guía completa (landing + paso a paso): **https://linnoff88-dev.github.io/arckhe-/guia/es/**
 
 ## Qué incluye la guía
 
@@ -28,19 +28,19 @@ Nada de esto se probó con una cuenta o clave: los datos provienen de las págin
 Leyenda: 🧠 sesión con Nei · ⚙️ script · 🤖 `claude -p` / agente
 
 1. 🧠 **Investigación** de las páginas públicas de los proveedores (solo lectura, sin cuenta ni API) → `~/projetos/output/provedores-semcensura/PESQUISA.md`, con lo que no se confirmó.
-2. ⚙️ **Portada** del catálogo + arte crudo de la hero: `node ~/.claude/skills/capa-inema/assets/gerar-capa.cjs --repo . --title "Provedores de IA sem censura" --cat "IA" --save-raw guia/assets/hero.png --gerador auto` → `capa/capa.png`.
+2. ⚙️ **Portada** del catálogo + arte crudo de la hero: `node ~/.claude/skills/capa-ARCKHÉ/assets/gerar-capa.cjs --repo . --title "Provedores de IA sem censura" --cat "IA" --save-raw guia/assets/hero.png --gerador auto` → `capa/capa.png`.
 3. ⚙️ **Banners** (Codex image_gen mediante la suscripción), 2 estilos × 3 idiomas: `bash ~/.claude/skills/projetos-landing-guia/assets/gerar-banner.sh --repo . --title "IA SEM CENSURA" --destaque "CENSURA" ...` (`--estilo grade --saida banner-grade`, `--lang en|es --saida banner-en|banner-es`...). Revisar el texto dibujado.
 4. 🧠 **Guía en PT** en `guia/index.html` (skill `projetos-landing-guia`), solo con datos de la investigación.
-5. 🤖 **Traducción** EN/ES con el traductor central: `inema-traduz -o out-en.html < prompt-en.txt` → `guia/en/index.html` y `guia/es/index.html`.
+5. 🤖 **Traducción** EN/ES con el traductor central: `ARCKHÉ-traduz -o out-en.html < prompt-en.txt` → `guia/en/index.html` y `guia/es/index.html`.
 6. 🤖 **Revisión independiente** por otro agente (con la perspectiva de alguien que nunca vio el proyecto).
 7. ⚙️ **Publicar**: `git push` → GitHub Actions (`.github/workflows/pages.yml`) publica en Pages; verificar que responda 200 en `/guia/`, `/guia/en/`, `/guia/es/`.
 8. 🧠 **Actualizar precios**: repetir el paso 1 y cambiar la fecha “verificado el” en la guía y los READMEs.
 
-## Relacionados en INEMA
+## Relacionados en ARCKHÉ
 
-- [IA privada en 3 niveles](https://inematds.github.io/ia-privada-3-niveis/guia/es/)
-- [IA sin censura defensiva](https://inematds.github.io/ia-sem-censura-defensiva/guia/es/)
+- [IA privada en 3 niveles](https://linnoff88-dev.github.io/arckhe-/guia/es/)
+- [IA sin censura defensiva](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 ---
 
-Contenido abierto de [INEMA.CLUB](https://inema.club). Úsalo con responsabilidad: quitar el bloqueo del modelo no elimina la ley.
+Contenido abierto de [ARCKHÉ AI](https://ARCKHÉ AI). Úsalo con responsabilidad: quitar el bloqueo del modelo no elimina la ley.
