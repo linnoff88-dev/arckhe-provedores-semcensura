@@ -194,7 +194,7 @@
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">Em resumo</span>
-  <p>Este guia mostra onde encontrar modelos de IA “sem censura”, ou seja, versões que não recusam pedidos. Serve para quem testa a segurança do próprio sistema, pesquisa ou só quer um assistente que não trave em assunto delicado. Você vê numa tabela os provedores por API, por chat, por GPU alugada e no seu próprio computador, com preço, privacidade declarada e se pedem identidade. Para usar, basta ler; os exemplos pedem uma conta no provedor escolhido ou o Ollama instalado.</p>
+  <p>Este guia mostra onde encontrar modelos de IA “sem censura”, ou seja, versões que nêo recusam pedidos. Serve para quem testa a segurança do próprio sistema, pesquisa ou só quer um assistente que nêo trave em assunto delicado. Você vê numa tabela os provedores por API, por chat, por GPU alugada e no seu próprio computador, com preço, privacidade declarada e se pedem identidade. Para usar, basta ler; os exemplos pedem uma conta no provedor escolhido ou o Ollama instalado.</p>
 </div></section>
 
 <section id="video"><div class="wrap">
@@ -213,11 +213,11 @@
   <p class="sub">Um modelo comum aprende a recusar certos pedidos. Quem publica versões “sem censura” remove essa recusa de formas diferentes, e cada forma muda o que você recebe.</p>
   <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="Banner com os tipos de provedor: API pronta, roteador, GPU alugada, local com Ollama, Hugging Face e privacidade" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
-    <div class="card"><h3><svg width="22" height="22"><use href="#i-sliders"/></svg>Uncensored (fine-tune)</h3><p>O modelo é treinado de novo com exemplos sem recusa. É o caso da família Dolphin. Custa treino, mas o resultado costuma ser mais estável. Esta descrição do Dolphin é conhecimento geral da área; confira no model card de cada versão.</p></div>
-    <div class="card"><h3><svg width="22" height="22"><use href="#i-scissors"/></svg>Abliterated</h3><p>Ninguém treina nada. A técnica acha nos pesos a “direção de recusa” (uma única direção nas ativações do modelo, segundo o paper de Arditi et al., 2024) e a apaga por ortogonalização. É rápida e barata, por isso há centenas de versões assim.</p></div>
-    <div class="card"><h3><svg width="22" height="22"><use href="#i-unlock"/></svg>Jailbroken</h3><p>O modelo continua igual. O que muda é o pedido: um prompt montado para enganar as regras. Funciona até o provedor corrigir, quebra sem aviso e costuma violar os termos de uso. Este guia não trata de jailbreak.</p></div>
+    <div class="card"><h3><svg width="22" height="22"><use href="#i-sliders"/></svg>Uncensored (fine-tune)</h3><p>O modelo é treinado de novo com exemplos sem recusa. É o caso da família Dolphin. Custa treino, mas o resultado costuma ser mais estável. Esta descriçêo do Dolphin é conhecimento geral da área; confira no model card de cada versêo.</p></div>
+    <div class="card"><h3><svg width="22" height="22"><use href="#i-scissors"/></svg>Abliterated</h3><p>Ninguém treina nada. A técnica acha nos pesos a “direçêo de recusa” (uma única direçêo nas ativações do modelo, segundo o paper de Arditi et al., 2024) e a apaga por ortogonalizaçêo. É rápida e barata, por isso há centenas de versões assim.</p></div>
+    <div class="card"><h3><svg width="22" height="22"><use href="#i-unlock"/></svg>Jailbroken</h3><p>O modelo continua igual. O que muda é o pedido: um prompt montado para enganar as regras. Funciona até o provedor corrigir, quebra sem aviso e costuma violar os termos de uso. Este guia nêo trata de jailbreak.</p></div>
   </div>
-  <div class="warn" style="margin-top:22px"><p><strong>O que você perde sem a trava.</strong> Modelo sem censura alucina mais e pode perder qualidade: o próprio artigo que popularizou a abliteration mostra queda nos benchmarks do Llama 3 8B depois do corte. Em análise de segurança ele também aponta falso positivo com confiança. E não há trava nenhuma: ele responde coisa perigosa ou errada do mesmo jeito. Confira tudo o que ele disser.</p></div>
+  <div class="warn" style="margin-top:22px"><p><strong>O que você perde sem a trava.</strong> Modelo sem censura alucina mais e pode perder qualidade: o próprio artigo que popularizou a abliteration mostra queda nos benchmarks do Llama 3 8B depois do corte. Em análise de segurança ele também aponta falso positivo com confiança. E nêo há trava nenhuma: ele responde coisa perigosa ou errada do mesmo jeito. Confira tudo o que ele disser.</p></div>
 </div></section>
 
 <section id="huggingface"><div class="wrap">
@@ -226,57 +226,57 @@
   <p class="sub">Quase todo modelo aberto sem censura nasce no Hugging Face, o maior repositório público de modelos. Os provedores da tabela abaixo pegam muitos deles de lá.</p>
   <div class="grid g3">
     <div class="card"><h3><svg width="22" height="22"><use href="#i-search"/></svg>Busque pelo nome</h3><p>Em <a href="https://huggingface.co/models" target="_blank" rel="noopener">huggingface.co/models</a>, procure <code>abliterated</code>, <code>uncensored</code>, <code>heretic</code> (variante recente) ou <code>dolphin</code>. Ordene por downloads ou curtidas.</p></div>
-    <div class="card"><h3><svg width="22" height="22"><use href="#i-layers"/></svg>Mesmo modelo, várias versões</h3><p>O mesmo modelo base aparece em várias edições: autores diferentes (huihui-ai, mlabonne, orcarouter) e tamanhos diferentes (quantização). Para rodar no Ollama, filtre por <code>GGUF</code>.</p></div>
-    <div class="card"><h3><svg width="22" height="22"><use href="#i-file"/></svg>Leia o model card</h3><p>Antes de baixar, veja no card qual é o modelo base, o método usado, a quantização e se há benchmark. Números como “0% de recusa sem perda” são do autor, não de teste independente.</p></div>
+    <div class="card"><h3><svg width="22" height="22"><use href="#i-layers"/></svg>Mesmo modelo, várias versões</h3><p>O mesmo modelo base aparece em várias edições: autores diferentes (huihui-ai, mlabonne, orcarouter) e tamanhos diferentes (quantizaçêo). Para rodar no Ollama, filtre por <code>GGUF</code>.</p></div>
+    <div class="card"><h3><svg width="22" height="22"><use href="#i-file"/></svg>Leia o model card</h3><p>Antes de baixar, veja no card qual é o modelo base, o método usado, a quantizaçêo e se há benchmark. Números como “0% de recusa sem perda” sêo do autor, nêo de teste independente.</p></div>
   </div>
 </div></section>
 
 <section id="provedores"><div class="wrap">
   <span class="chip">Comparativo</span>
   <h2>Tabela de provedores</h2>
-  <p class="sub">Preços em US$ por 1 milhão de tokens (entrada / saída), salvo indicação, conferidos em 09/11/2026 nas páginas públicas de cada provedor. Mudam sem aviso: confira no site antes de pagar. “Não confirmado” quer dizer que não achamos a informação, não que ela não exista.</p>
+  <p class="sub">Preços em US$ por 1 milhêo de tokens (entrada / saída), salvo indicaçêo, conferidos em 09/11/2026 nas páginas públicas de cada provedor. Mudam sem aviso: confira no site antes de pagar. “Nêo confirmado” quer dizer que nêo achamos a informaçêo, nêo que ela nêo exista.</p>
   <details class="gloss"><summary>Glossário rápido dos termos da tabela</summary>
     <dl>
-      <dt>Private / Anonymized</dt><dd>Modos de privacidade da Venice. Private: o modelo roda em GPU da Venice ou de parceiro com retenção zero por contrato. Anonymized: o pedido vai para um provedor terceiro, que vê o conteúdo e pode guardar.</dd>
-      <dt>TEE</dt><dd>Ambiente de execução confiável: um pedaço isolado do hardware que nem o dono do servidor consegue espiar, com atestado de que está rodando o código certo.</dd>
+      <dt>Private / Anonymized</dt><dd>Modos de privacidade da Venice. Private: o modelo roda em GPU da Venice ou de parceiro com retençêo zero por contrato. Anonymized: o pedido vai para um provedor terceiro, que vê o conteúdo e pode guardar.</dd>
+      <dt>TEE</dt><dd>Ambiente de execuçêo confiável: um pedaço isolado do hardware que nem o dono do servidor consegue espiar, com atestado de que está rodando o código certo.</dd>
       <dt>E2EE</dt><dd>Criptografia de ponta a ponta: o pedido sai cifrado do seu lado e só é aberto dentro desse hardware isolado.</dd>
-      <dt>ZDR</dt><dd>Zero data retention: o provedor promete não guardar pedidos nem respostas.</dd>
-      <dt>Quantização</dt><dd>Guardar os pesos do modelo com menos precisão (Q4 = 4 bits por peso, por exemplo). O arquivo fica bem menor e cabe em GPU menor, com alguma perda de qualidade.</dd>
+      <dt>ZDR</dt><dd>Zero data retention: o provedor promete nêo guardar pedidos nem respostas.</dd>
+      <dt>Quantizaçêo</dt><dd>Guardar os pesos do modelo com menos precisêo (Q4 = 4 bits por peso, por exemplo). O arquivo fica bem menor e cabe em GPU menor, com alguma perda de qualidade.</dd>
       <dt>GGUF</dt><dd>Formato de arquivo de modelo quantizado usado pelo Ollama e pelo llama.cpp.</dd>
       <dt>MLX</dt><dd>Biblioteca da Apple para rodar modelos nos chips Apple Silicon (M1 em diante).</dd>
-      <dt>vLLM</dt><dd>Servidor de código aberto para rodar modelos em GPU com alta vazão; também expõe API compatível com OpenAI.</dd>
-      <dt>Token / “por 1 milhão de tokens”</dt><dd>Token é o pedaço de texto que o modelo lê e escreve, em geral parte de uma palavra. Os provedores cobram por milhão de tokens: um preço para o que você manda (entrada) e outro para o que ele responde (saída).</dd>
-      <dt>Heretic</dt><dd>Rótulo de uma variante recente de remoção da recusa, parecida com a abliteration. Aparece no nome do modelo, como em GLM 4.7 Flash Heretic.</dd>
+      <dt>vLLM</dt><dd>Servidor de código aberto para rodar modelos em GPU com alta vazêo; também expõe API compatível com OpenAI.</dd>
+      <dt>Token / “por 1 milhêo de tokens”</dt><dd>Token é o pedaço de texto que o modelo lê e escreve, em geral parte de uma palavra. Os provedores cobram por milhêo de tokens: um preço para o que você manda (entrada) e outro para o que ele responde (saída).</dd>
+      <dt>Heretic</dt><dd>Rótulo de uma variante recente de remoçêo da recusa, parecida com a abliteration. Aparece no nome do modelo, como em GLM 4.7 Flash Heretic.</dd>
       <dt>DIEM</dt><dd>Token da Venice na rede Base. Cada DIEM em stake vale US$ 1 de crédito de API por dia.</dd>
       <dt>Pod</dt><dd>A máquina com GPU que você aluga no RunPod. É cobrada por segundo enquanto estiver ligada.</dd>
-      <dt>Red team</dt><dd>Equipe ou teste que ataca o próprio sistema, com autorização, para achar falhas antes de alguém de fora.</dd>
+      <dt>Red team</dt><dd>Equipe ou teste que ataca o próprio sistema, com autorizaçêo, para achar falhas antes de alguém de fora.</dd>
     </dl>
   </details>
   <p class="swipe">Deslize a tabela para o lado →</p>
   <div class="tbl"><table>
-    <thead><tr><th>Provedor</th><th>Tipo</th><th>Modelos sem censura</th><th>Preço aprox.</th><th>Pede identidade?</th><th>Privacidade / retenção declarada</th><th>API compatível com OpenAI?</th><th>Observação</th></tr></thead>
+    <thead><tr><th>Provedor</th><th>Tipo</th><th>Modelos sem censura</th><th>Preço aprox.</th><th>Pede identidade?</th><th>Privacidade / retençêo declarada</th><th>API compatível com OpenAI?</th><th>Observaçêo</th></tr></thead>
     <tbody>
-      <tr class="top"><td><strong>Venice</strong><br><span class="tag">destaque</span></td><td>API pronta + chat</td><td><ul class="ml"><li>GLM 4.7 Flash Heretic <code>olafangensan-glm-4.7-flash-heretic</code> 0,07 / 0,40</li><li>Gemma 4 Uncensored <code>gemma-4-uncensored</code> 0,1625 / 0,50</li><li>Venice Uncensored 1.2 <code>venice-uncensored-1-2</code> 0,20 / 0,90</li><li>DeepSeek V4.1 Flash 1017 Uncensored <code>deepseek-v4-1-flash-1017-uncensored</code> 0,33 / 1,32</li><li>DeepSeek V4.1 Flash 1017 Abliterated (E2EE) <code>e2ee-deepseek-v4-1-flash-1017-abliterated</code> 0,375 / 1,50</li><li>Gemma 4 26B A4B Uncensored (E2EE) <code>e2ee-gemma-4-26b-a4b-uncensored-p</code> 0,19 / 0,88</li></ul></td><td>Por token: veja cada modelo ao lado<br>Plano Pro: US$ 18/mês só no anual (US$ 216/ano); o site indica economia de US$ 36 no anual, o que dá cerca de US$ 21 no mês a mês</td><td>Pede conta (e-mail ou carteira). Documento: <span class="nc">não confirmado, confira no site</span></td><td>Modo Private: retenção zero por contrato. TEE/E2EE em alguns modelos. Modo Anonymized: o provedor terceiro vê o pedido. Declarado, sem auditoria independente encontrada</td><td>Sim</td><td>Paga com cartão, cripto ou DIEM. A assinatura não inclui API ilimitada. Quem sai em 15/11/2026 é o <code>deepseek-v4-1-flash</code> (sem “1017”); o <code>deepseek-v4-1-flash-1017-uncensored</code> continua e é o modelo padrão da API</td></tr>
-      <tr><td><strong>abliteration.ai</strong></td><td>API pronta</td><td>Abliterated Large v2 (GLM-5.3 por baixo, segundo o site) e Large Flash</td><td>Planos de US$ 20, 50 e 200/mês (vira crédito). Por token: <span class="nc">não confirmado</span>; a Venice revende o Large v2 a 3,00 / 5,00</td><td>Cadastro por Google, GitHub, Microsoft ou e-mail; termos pedem 18+. Documento: <span class="nc">não confirmado</span></td><td>“Zero data retention”, prompts fora dos logs. Declarado pelo próprio site, para a API dela. Atenção: o mesmo Large v2 revendido pela Venice está lá no modo Anonymized, em que o provedor terceiro vê o pedido</td><td>Sim, e também a API Messages da Anthropic</td><td>Foco em segurança e red team. Termos proíbem uso ilegal</td></tr>
-      <tr><td><strong>orcarouter</strong> (perfil no Ollama)</td><td>Local</td><td>Qwen3.8-27B-Uncensored; Qwen3.8-Flash-Next-Uncensored (MLX, Apple Silicon)</td><td>Grátis (o custo é o seu hardware)</td><td>Não, só baixar</td><td>Roda na sua máquina</td><td>Sim, pelo Ollama em <code>localhost:11434/v1</code></td><td>Não confunda com o gateway orcarouter.ai, da mesma equipe, que não é sem censura</td></tr>
-      <tr><td><strong>OpenRouter</strong></td><td>Roteador</td><td>Dolphin Mistral 24B Venice Edition; Hermes 4 405B; Cydonia 24B; Skyfall 36B; Magnum v4 72B; Euryale 70B</td><td>Dolphin Venice: 0,20 / 0,90<br>Hermes 4 405B: 1,00 / 3,00<br>Magnum v4 72B: 2,50 / 5,00</td><td>Pede conta. Cripto: <span class="nc">não confirmado</span></td><td>Depende do provedor por trás de cada modelo; há controles de logging e ZDR na conta</td><td>Sim</td><td>Hermes, Magnum e Euryale são menos restritivos, não necessariamente 100% sem recusa</td></tr>
-      <tr><td><strong>Featherless</strong></td><td>API pronta (assinatura)</td><td>Catálogo de 40.000+ modelos do Hugging Face; quais são sem censura: <span class="nc">não confirmado</span></td><td>Chat: US$ 25/mês (tokens ilimitados, contexto 32K)<br>Developer: US$ 50/mês em créditos</td><td>Conta + pagamento</td><td>Política diz que não coleta prompts nem respostas (texto de 10/06/2024)</td><td>Sim, base <code>https://api.featherless.ai/v1</code></td><td>O plano Chat proíbe uso por API ou automação; para API, use o Developer</td></tr>
-      <tr><td><strong>RunPod</strong></td><td>GPU alugada</td><td>Qualquer modelo que você subir (vLLM, Ollama)</td><td>Por hora, Secure Cloud: A100 80GB US$ 1,79; H100 PCIe US$ 2,89; H100 SXM US$ 3,99; RTX Pro 6000 US$ 2,49<br>Community Cloud, a partir de: A100 US$ 1,19–1,39; H100 PCIe US$ 1,99; H100 SXM US$ 2,69; RTX Pro 6000 US$ 1,69</td><td>Conta + cartão</td><td>Você controla a máquina e os logs</td><td>Sim, se rodar vLLM ou Ollama</td><td>Cobrança por segundo. Community Cloud é mais barata, com máquinas de terceiros; Secure Cloud fica em data centers parceiros. Desligue o pod quando parar</td></tr>
-      <tr><td><strong>Local com Ollama</strong></td><td>Local</td><td>huihui-ai, orcarouter, mlabonne e outros em GGUF</td><td>Grátis + hardware</td><td>Não</td><td>Total: nada sai do seu computador</td><td>Sim, em <code>localhost:11434/v1</code></td><td>Mais privado e mais barato no longo prazo; a qualidade depende da sua GPU</td></tr>
+      <tr class="top"><td><strong>Venice</strong><br><span class="tag">destaque</span></td><td>API pronta + chat</td><td><ul class="ml"><li>GLM 4.7 Flash Heretic <code>olafangensan-glm-4.7-flash-heretic</code> 0,07 / 0,40</li><li>Gemma 4 Uncensored <code>gemma-4-uncensored</code> 0,1625 / 0,50</li><li>Venice Uncensored 1.2 <code>venice-uncensored-1-2</code> 0,20 / 0,90</li><li>DeepSeek V4.1 Flash 1017 Uncensored <code>deepseek-v4-1-flash-1017-uncensored</code> 0,33 / 1,32</li><li>DeepSeek V4.1 Flash 1017 Abliterated (E2EE) <code>e2ee-deepseek-v4-1-flash-1017-abliterated</code> 0,375 / 1,50</li><li>Gemma 4 26B A4B Uncensored (E2EE) <code>e2ee-gemma-4-26b-a4b-uncensored-p</code> 0,19 / 0,88</li></ul></td><td>Por token: veja cada modelo ao lado<br>Plano Pro: US$ 18/mês só no anual (US$ 216/ano); o site indica economia de US$ 36 no anual, o que dá cerca de US$ 21 no mês a mês</td><td>Pede conta (e-mail ou carteira). Documento: <span class="nc">nêo confirmado, confira no site</span></td><td>Modo Private: retençêo zero por contrato. TEE/E2EE em alguns modelos. Modo Anonymized: o provedor terceiro vê o pedido. Declarado, sem auditoria independente encontrada</td><td>Sim</td><td>Paga com cartêo, cripto ou DIEM. A assinatura nêo inclui API ilimitada. Quem sai em 15/11/2026 é o <code>deepseek-v4-1-flash</code> (sem “1017”); o <code>deepseek-v4-1-flash-1017-uncensored</code> continua e é o modelo padrêo da API</td></tr>
+      <tr><td><strong>abliteration.ai</strong></td><td>API pronta</td><td>Abliterated Large v2 (GLM-5.3 por baixo, segundo o site) e Large Flash</td><td>Planos de US$ 20, 50 e 200/mês (vira crédito). Por token: <span class="nc">nêo confirmado</span>; a Venice revende o Large v2 a 3,00 / 5,00</td><td>Cadastro por Google, GitHub, Microsoft ou e-mail; termos pedem 18+. Documento: <span class="nc">nêo confirmado</span></td><td>“Zero data retention”, prompts fora dos logs. Declarado pelo próprio site, para a API dela. Atençêo: o mesmo Large v2 revendido pela Venice está lá no modo Anonymized, em que o provedor terceiro vê o pedido</td><td>Sim, e também a API Messages da Anthropic</td><td>Foco em segurança e red team. Termos proíbem uso ilegal</td></tr>
+      <tr><td><strong>orcarouter</strong> (perfil no Ollama)</td><td>Local</td><td>Qwen3.8-27B-Uncensored; Qwen3.8-Flash-Next-Uncensored (MLX, Apple Silicon)</td><td>Grátis (o custo é o seu hardware)</td><td>Nêo, só baixar</td><td>Roda na sua máquina</td><td>Sim, pelo Ollama em <code>localhost:11434/v1</code></td><td>Nêo confunda com o gateway orcarouter.ai, da mesma equipe, que nêo é sem censura</td></tr>
+      <tr><td><strong>OpenRouter</strong></td><td>Roteador</td><td>Dolphin Mistral 24B Venice Edition; Hermes 4 405B; Cydonia 24B; Skyfall 36B; Magnum v4 72B; Euryale 70B</td><td>Dolphin Venice: 0,20 / 0,90<br>Hermes 4 405B: 1,00 / 3,00<br>Magnum v4 72B: 2,50 / 5,00</td><td>Pede conta. Cripto: <span class="nc">nêo confirmado</span></td><td>Depende do provedor por trás de cada modelo; há controles de logging e ZDR na conta</td><td>Sim</td><td>Hermes, Magnum e Euryale sêo menos restritivos, nêo necessariamente 100% sem recusa</td></tr>
+      <tr><td><strong>Featherless</strong></td><td>API pronta (assinatura)</td><td>Catálogo de 40.000+ modelos do Hugging Face; quais sêo sem censura: <span class="nc">nêo confirmado</span></td><td>Chat: US$ 25/mês (tokens ilimitados, contexto 32K)<br>Developer: US$ 50/mês em créditos</td><td>Conta + pagamento</td><td>Política diz que nêo coleta prompts nem respostas (texto de 10/06/2024)</td><td>Sim, base <code>https://api.featherless.ai/v1</code></td><td>O plano Chat proíbe uso por API ou automaçêo; para API, use o Developer</td></tr>
+      <tr><td><strong>RunPod</strong></td><td>GPU alugada</td><td>Qualquer modelo que você subir (vLLM, Ollama)</td><td>Por hora, Secure Cloud: A100 80GB US$ 1,79; H100 PCIe US$ 2,89; H100 SXM US$ 3,99; RTX Pro 6000 US$ 2,49<br>Community Cloud, a partir de: A100 US$ 1,19–1,39; H100 PCIe US$ 1,99; H100 SXM US$ 2,69; RTX Pro 6000 US$ 1,69</td><td>Conta + cartêo</td><td>Você controla a máquina e os logs</td><td>Sim, se rodar vLLM ou Ollama</td><td>Cobrança por segundo. Community Cloud é mais barata, com máquinas de terceiros; Secure Cloud fica em data centers parceiros. Desligue o pod quando parar</td></tr>
+      <tr><td><strong>Local com Ollama</strong></td><td>Local</td><td>huihui-ai, orcarouter, mlabonne e outros em GGUF</td><td>Grátis + hardware</td><td>Nêo</td><td>Total: nada sai do seu computador</td><td>Sim, em <code>localhost:11434/v1</code></td><td>Mais privado e mais barato no longo prazo; a qualidade depende da sua GPU</td></tr>
     </tbody>
   </table></div>
-  <p class="note">Também olhamos Novita, Together e DeepInfra: não achamos modelos sem censura nas páginas públicas. O Hugging Face Inference Endpoints aluga GPU por hora para subir qualquer modelo. Vast.ai não foi pesquisado.</p>
+  <p class="note">Também olhamos Novita, Together e DeepInfra: nêo achamos modelos sem censura nas páginas públicas. O Hugging Face Inference Endpoints aluga GPU por hora para subir qualquer modelo. Vast.ai nêo foi pesquisado.</p>
 </div></section>
 
 <section id="escolher"><div class="wrap">
   <span class="chip">Qual escolher</span>
-  <h2>Comece pela sua situação</h2>
-  <p class="sub">Não existe o melhor provedor. Existe o que serve para o que você quer fazer agora.</p>
+  <h2>Comece pela sua situaçêo</h2>
+  <p class="sub">Nêo existe o melhor provedor. Existe o que serve para o que você quer fazer agora.</p>
   <div class="grid g4">
     <div class="card"><h3><svg width="22" height="22"><use href="#i-zap"/></svg>Quero testar rápido</h3><p>Crie conta na Venice e use o chat ou a API com o Venice Uncensored 1.2. É o caminho com menos passos.</p><span class="go">Vá para: <strong>Venice</strong></span></div>
-    <div class="card"><h3><svg width="22" height="22"><use href="#i-home"/></svg>Não quero mandar nada para fora</h3><p>Rode no seu computador com o Ollama e um modelo abliterated. Nada sai da máquina. Precisa de GPU razoável para modelos maiores.</p><span class="go">Vá para: <strong>Local com Ollama</strong></span></div>
-    <div class="card"><h3><svg width="22" height="22"><use href="#i-coins"/></svg>Preciso de API barata</h3><p>Na Venice, o mais barato hoje é o GLM 4.7 Flash Heretic (0,07 / 0,40); depois vem o Gemma 4 Uncensored (0,1625 / 0,50). No OpenRouter, o Dolphin Venice sai a 0,20 / 0,90. Todos aceitam o formato da OpenAI. Mais barato não quer dizer melhor: teste a qualidade na sua tarefa.</p><span class="go">Vá para: <strong>Venice ou OpenRouter</strong></span></div>
-    <div class="card"><h3><svg width="22" height="22"><use href="#i-eye"/></svg>Quero privacidade máxima</h3><p>Local é o único caminho em que você não depende da palavra de ninguém. Se precisar de nuvem, prefira GPU alugada sob seu controle ou os modos E2EE da Venice.</p><span class="go">Vá para: <strong>Local, RunPod ou Venice E2EE</strong></span></div>
+    <div class="card"><h3><svg width="22" height="22"><use href="#i-home"/></svg>Nêo quero mandar nada para fora</h3><p>Rode no seu computador com o Ollama e um modelo abliterated. Nada sai da máquina. Precisa de GPU razoável para modelos maiores.</p><span class="go">Vá para: <strong>Local com Ollama</strong></span></div>
+    <div class="card"><h3><svg width="22" height="22"><use href="#i-coins"/></svg>Preciso de API barata</h3><p>Na Venice, o mais barato hoje é o GLM 4.7 Flash Heretic (0,07 / 0,40); depois vem o Gemma 4 Uncensored (0,1625 / 0,50). No OpenRouter, o Dolphin Venice sai a 0,20 / 0,90. Todos aceitam o formato da OpenAI. Mais barato nêo quer dizer melhor: teste a qualidade na sua tarefa.</p><span class="go">Vá para: <strong>Venice ou OpenRouter</strong></span></div>
+    <div class="card"><h3><svg width="22" height="22"><use href="#i-eye"/></svg>Quero privacidade máxima</h3><p>Local é o único caminho em que você nêo depende da palavra de ninguém. Se precisar de nuvem, prefira GPU alugada sob seu controle ou os modos E2EE da Venice.</p><span class="go">Vá para: <strong>Local, RunPod ou Venice E2EE</strong></span></div>
   </div>
 </div></section>
 
@@ -287,7 +287,7 @@
 
   <div class="step"><div class="b">1</div><div>
     <h3>Chamar a Venice pela API compatível com OpenAI</h3>
-    <p>A Venice segue a especificação da OpenAI, então qualquer biblioteca da OpenAI funciona trocando o endereço. Crie a chave em <a href="https://venice.ai/settings/api" target="_blank" rel="noopener">venice.ai/settings/api</a> e guarde no terminal. A API consome créditos: a assinatura dá só uma franquia mensal pequena (Pro: US$ 1; contas grátis: nenhuma), então coloque saldo antes. Sem saldo, a API responde erro <code>402</code> <code>INSUFFICIENT_BALANCE</code>.</p>
+    <p>A Venice segue a especificaçêo da OpenAI, entêo qualquer biblioteca da OpenAI funciona trocando o endereço. Crie a chave em <a href="https://venice.ai/settings/api" target="_blank" rel="noopener">venice.ai/settings/api</a> e guarde no terminal. A API consome créditos: a assinatura dá só uma franquia mensal pequena (Pro: US$ 1; contas grátis: nenhuma), entêo coloque saldo antes. Sem saldo, a API responde erro <code>402</code> <code>INSUFFICIENT_BALANCE</code>.</p>
     <p><strong>Linux, Mac ou WSL (terminal bash):</strong></p>
 <pre><span class="k">export</span> VENICE_API_KEY=<span class="s">"cole-sua-chave-aqui"</span>   <span class="c"># nunca no código nem no git</span>
 
@@ -300,7 +300,7 @@
 
 <span class="k">$body</span> = @{ model=<span class="s">"venice-uncensored-1-2"</span>; messages=@(@{ role=<span class="s">"user"</span>; content=<span class="s">"Explique o que é abliteration em 3 frases."</span> }) } | ConvertTo-Json -Depth 5
 <span class="k">Invoke-RestMethod</span> -Uri https://api.venice.ai/api/v1/chat/completions -Method Post -Headers @{ Authorization=<span class="s">"Bearer $env:VENICE_API_KEY"</span> } -ContentType <span class="s">"application/json; charset=utf-8"</span> -Body <span class="k">$body</span></pre>
-    <p>O mesmo em Python, com a biblioteca <code>openai</code>. Crie antes um ambiente isolado para não mexer no Python do sistema:</p>
+    <p>O mesmo em Python, com a biblioteca <code>openai</code>. Crie antes um ambiente isolado para nêo mexer no Python do sistema:</p>
 <pre><span class="c"># Linux, Mac ou WSL</span>
 <span class="k">python3</span> -m venv .venv &amp;&amp; <span class="k">source</span> .venv/bin/activate
 <span class="k">pip install</span> openai
@@ -320,14 +320,14 @@ r = cliente.chat.completions.create(
     messages=[{<span class="s">"role"</span>: <span class="s">"user"</span>, <span class="s">"content"</span>: <span class="s">"Liste 3 riscos de um modelo sem censura."</span>}],
 )
 print(r.choices[0].message.content)</pre>
-    <p>Alguns modelos são só para planos pagos e devolvem erro 401 <code>PRO_ONLY_MODEL</code>. Os ids mudam: confira a lista atual em <a href="https://docs.venice.ai/overview/pricing" target="_blank" rel="noopener">docs.venice.ai</a>. A abliteration.ai funciona do mesmo jeito, com <code>base_url="https://api.abliteration.ai/v1"</code> e a chave dela.</p>
+    <p>Alguns modelos sêo só para planos pagos e devolvem erro 401 <code>PRO_ONLY_MODEL</code>. Os ids mudam: confira a lista atual em <a href="https://docs.venice.ai/overview/pricing" target="_blank" rel="noopener">docs.venice.ai</a>. A abliteration.ai funciona do mesmo jeito, com <code>base_url="https://api.abliteration.ai/v1"</code> e a chave dela.</p>
   </div></div>
 
   <div class="step"><div class="b">2</div><div>
     <h3>Rodar no seu computador com o Ollama</h3>
     <p>Primeiro instale o Ollama. No Windows e no Mac, baixe em <a href="https://ollama.com/download" target="_blank" rel="noopener">ollama.com/download</a>. No Linux:</p>
 <pre><span class="k">curl</span> -fsSL https://ollama.com/install.sh | sh</pre>
-    <p><strong>Regra de memória:</strong> o modelo precisa caber na memória da placa de vídeo (VRAM), com uma folga de 1 a 2 GB para a conversa. O arquivo do Ollama já mostra o tamanho: o <code>orcarouter/Qwen3.8-27B-Uncensored</code> (versão padrão, quantizada) tem 18 GB, então pede uma GPU de 24 GB. Sem GPU ele roda na memória do computador, mas bem mais devagar.</p>
+    <p><strong>Regra de memória:</strong> o modelo precisa caber na memória da placa de vídeo (VRAM), com uma folga de 1 a 2 GB para a conversa. O arquivo do Ollama já mostra o tamanho: o <code>orcarouter/Qwen3.8-27B-Uncensored</code> (versêo padrêo, quantizada) tem 18 GB, entêo pede uma GPU de 24 GB. Sem GPU ele roda na memória do computador, mas bem mais devagar.</p>
     <p>Escolha pela sua máquina (tamanhos conferidos no registro do Ollama em 09/11/2026):</p>
 <pre><span class="c"># GPU de 24 GB ou mais (arquivo de 18 GB)</span>
 <span class="k">ollama run</span> orcarouter/Qwen3.8-27B-Uncensored
@@ -341,9 +341,9 @@ print(r.choices[0].message.content)</pre>
 <pre>
 
 <span class="c"># o mesmo modelo pela API local do Ollama (o Ollama precisa estar rodando;</span>
-<span class="c"># se der erro de conexão, rode "ollama serve" em outro terminal)</span>
+<span class="c"># se der erro de conexêo, rode "ollama serve" em outro terminal)</span>
 <span class="k">curl</span> http://localhost:11434/api/chat -d <span class="s">'{"model":"orcarouter/Qwen3.8-27B-Uncensored","messages":[{"role":"user","content":"oi"}],"stream":false}'</span></pre>
-    <p>Quer montar isso com acesso pelo celular, sem expor nada na internet, e comparar modelo normal com sem censura? O guia irmão faz o passo a passo completo: <a href="https://inematds.github.io/ia-privada-3-niveis/guia/" target="_blank" rel="noopener">IA privada em 3 níveis</a>.</p>
+    <p>Quer montar isso com acesso pelo celular, sem expor nada na internet, e comparar modelo normal com sem censura? O guia irmêo faz o passo a passo completo: <a href="https://inematds.github.io/ia-privada-3-niveis/guia/" target="_blank" rel="noopener">IA privada em 3 níveis</a>.</p>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
@@ -354,7 +354,7 @@ print(r.choices[0].message.content)</pre>
       <li><strong>Chave</strong>: a sua, por variável de ambiente (no Ollama local o campo é obrigatório, mas ignorado: a doc dele usa <code>ollama</code>).</li>
       <li><strong>Nome do modelo</strong>: o id exato da tabela, como <code>venice-uncensored-1-2</code>.</li>
     </ul>
-    <p>Exemplo concreto: o <a href="https://opencode.ai/docs/providers/" target="_blank" rel="noopener">opencode</a> aceita um provedor próprio no arquivo <code>opencode.jsonc</code>, no formato da documentação dele. Para a Venice:</p>
+    <p>Exemplo concreto: o <a href="https://opencode.ai/docs/providers/" target="_blank" rel="noopener">opencode</a> aceita um provedor próprio no arquivo <code>opencode.jsonc</code>, no formato da documentaçêo dele. Para a Venice:</p>
 <pre>{
   <span class="s">"$schema"</span>: <span class="s">"https://opencode.ai/config.json"</span>,
   <span class="s">"providers"</span>: {
@@ -367,19 +367,19 @@ print(r.choices[0].message.content)</pre>
     }
   }
 }</pre>
-    <p>O modelo aparece como <code>venice/venice-uncensored-1-2</code>. Com o Ollama local o opencode acha os modelos sozinho em <code>http://127.0.0.1:11434</code>. Outras ferramentas de agente, como Claude Code e Codex, são feitas para os modelos da própria empresa e podem limitar ou não aceitar provedores de fora; confira na documentação de cada uma antes de tentar. A abliteration.ai também fala o formato da Anthropic, o que ajuda em ferramentas que só aceitam esse. Lembre: modelo menor e sem trava erra mais em tarefa longa de agente, então revise cada passo que ele executar.</p>
+    <p>O modelo aparece como <code>venice/venice-uncensored-1-2</code>. Com o Ollama local o opencode acha os modelos sozinho em <code>http://127.0.0.1:11434</code>. Outras ferramentas de agente, como Claude Code e Codex, sêo feitas para os modelos da própria empresa e podem limitar ou nêo aceitar provedores de fora; confira na documentaçêo de cada uma antes de tentar. A abliteration.ai também fala o formato da Anthropic, o que ajuda em ferramentas que só aceitam esse. Lembre: modelo menor e sem trava erra mais em tarefa longa de agente, entêo revise cada passo que ele executar.</p>
   </div></div>
 </div></section>
 
 <section id="dados"><div class="wrap">
   <span class="chip">Confira antes de usar</span>
-  <h2>Para onde vão os seus dados</h2>
-  <p class="sub">“Sem censura” não quer dizer “sem registro”. Leia isto antes de colar qualquer coisa num provedor.</p>
+  <h2>Para onde vêo os seus dados</h2>
+  <p class="sub">“Sem censura” nêo quer dizer “sem registro”. Leia isto antes de colar qualquer coisa num provedor.</p>
   <div class="grid g2">
     <div class="card">
       <ul class="check">
-        <li><svg width="20" height="20"><use href="#i-alert"/></svg><span><strong>Retenção declarada não é retenção auditada.</strong> Venice, abliteration.ai, Featherless e orcarouter.ai dizem não guardar seus pedidos. Não achamos auditoria independente de nenhum deles.</span></li>
-        <li><svg width="20" height="20"><use href="#i-alert"/></svg><span><strong>Não mande dado de cliente, senha nem documento.</strong> Se o dado não é seu ou é sensível, use o modelo local.</span></li>
+        <li><svg width="20" height="20"><use href="#i-alert"/></svg><span><strong>Retençêo declarada nêo é retençêo auditada.</strong> Venice, abliteration.ai, Featherless e orcarouter.ai dizem nêo guardar seus pedidos. Nêo achamos auditoria independente de nenhum deles.</span></li>
+        <li><svg width="20" height="20"><use href="#i-alert"/></svg><span><strong>Nêo mande dado de cliente, senha nem documento.</strong> Se o dado nêo é seu ou é sensível, use o modelo local.</span></li>
         <li><svg width="20" height="20"><use href="#i-alert"/></svg><span><strong>Veja o modo de privacidade do modelo.</strong> Na Venice, modelos “Anonymized” passam o pedido para um provedor terceiro, que pode guardar.</span></li>
         <li><svg width="20" height="20"><use href="#i-alert"/></svg><span><strong>Leia os termos.</strong> Vários provedores proíbem uso ilegal e de alto risco, mesmo vendendo modelo sem filtro.</span></li>
       </ul>
@@ -387,7 +387,7 @@ print(r.choices[0].message.content)</pre>
     <div class="card">
       <h3><svg width="22" height="22"><use href="#i-check"/></svg>Uso responsável</h3>
       <p>Bons usos: testar a segurança do <strong>seu próprio</strong> app, organizar as <strong>suas</strong> fotos e arquivos sem que um filtro trave, analisar o <strong>seu</strong> equipamento e a sua rede, pesquisar como os modelos funcionam.</p>
-      <p>Tirar a trava do modelo não tira a lei. Quem decide o que pedir e o que fazer com a resposta é você, e a responsabilidade também é sua.</p>
+      <p>Tirar a trava do modelo nêo tira a lei. Quem decide o que pedir e o que fazer com a resposta é você, e a responsabilidade também é sua.</p>
     </div>
   </div>
 </div></section>
